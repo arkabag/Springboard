@@ -1,0 +1,24 @@
+
+Model: Random Forest Classifier
+
+Features:
+AnyOpioid, Fentanyl_Analogue, DateType, Oxycodone, Heroin, Methadone, Sex_Male, Benzodiazepine, Cocaine, AgeGroup_51-60, OpiateNOS, AgeGroup_19-30, AgeGroup_31-40, Ethanol, Hydrocodone, Amphet, Race_White, Oxymorphone, Race_Hispanic, White, AgeGroup_41-50, Race_Black, AgeGroup_61-70, Morphine_NotHeroin, Tramad, AgeGroup_71-80, Hydromorphone, Race_Hispanic, Black, Race_Unknown, MannerofDeath_Accident, Race_Asian, Other, MannerofDeath_accident, MannerofDeath_Pending, Race_Other, MannerofDeath_Unknown, Sex_Unknown, Race_Chinese, AgeGroup_81-90, Race_Hawaiian, Race_Native American, Other, MannerofDeath_Natural, AgeGroup_91-100
+
+Parameters:
+- Number of Trees (n_estimators): 100
+- Maximum Depth of Trees (max_depth): 10
+- Minimum Samples per Leaf (min_samples_leaf): 1
+- Minimum Samples for Split (min_samples_split): 5
+
+Hyperparameters:
+- Best hyperparameters from GridSearchCV:
+  - max_depth: 10
+  - min_samples_leaf: 1
+  - min_samples_split: 5
+  - n_estimators: 100
+
+Performance Metrics (Test Set):
+- Accuracy: 80.20%
+- Precision: 78.45%
+- Recall: 75.28%
+- F1 Score: 76.83%
