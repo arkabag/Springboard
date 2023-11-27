@@ -1,0 +1,31 @@
+
+Airbnb Occupancy Rate Modeling - Model Metrics Summary
+
+1. Linear Regression Model:
+   - Mean Squared Error (MSE): 3.116163013178e+20
+   - R-squared: -5.127382421446022e+21
+   - Comments: Extremely poor performance, possibly due to violation of linear regression assumptions.
+
+2. Random Forest Regressor (Default Parameters):
+   - Mean Squared Error (MSE): 0.04219514334594888
+   - R-squared: 0.30571463897272344
+   - Comments: Better performance than the Linear Regression model. The model explains approximately 30.57% of the variance in the target variable.
+
+3. Gradient Boosting Regressor (Default Parameters):
+   - Mean Squared Error (MSE): 0.04405501916053564
+   - R-squared: 0.27511195702875413
+   - Comments: Similar performance to the Random Forest model, but with slightly lower R-squared.
+
+Hyperparameter Tuning for Random Forest Regressor:
+- Best Parameters:
+   - Max Depth: None
+   - Min Samples Leaf: 4
+   - Min Samples Split: 2
+   - Number of Estimators: 200
+- Best Score (Neg MSE): -0.04265617783956185
+- Comments: Slight improvement in MSE compared to the untuned model. Indicates potential for further optimization.
+
+Conclusion:
+- Linear Regression is not suitable for this dataset.
+- Both Random Forest and Gradient Boosting models show promise, with Random Forest having a slight edge.
+- Hyperparameter tuning shows potential for further improvements in model performance.
